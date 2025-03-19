@@ -1,0 +1,30 @@
+experiments:
+  synthetic_only:
+    description: "Training with synthetic data only"
+    training:
+      epochs: 10
+      batch_size: 16
+      learning_rate: 1e-5
+    data:
+      use_augmentation: true
+      noise_factor: 0.005
+      speed_factors: [0.9, 1.0, 1.1]
+
+  mixed_data:
+    description: "Training with mix of synthetic and real data"
+    training:
+      epochs: 15
+      batch_size: 16
+      learning_rate: 5e-6
+    data:
+      synthetic_ratio: 0.7
+      use_augmentation: true
+
+evaluation:
+  metrics:
+    - wer
+    - cer
+    - bleu
+  test_sets:
+    - synthetic_test
+    - real_test
