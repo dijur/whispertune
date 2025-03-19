@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 # whispertune
+
 A framework for fine-tuning OpenAI's Whisper model for low-resource languages using synthetic data generation
 =======
 # WhisperTune
@@ -94,9 +94,3 @@ The system provides several evaluation metrics:
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-[Add your license information here]
-
->>>>>>> 6b7d5d7 (Initial commit)
